@@ -1,0 +1,47 @@
+Welcome to Homework 4!
+
+File Descriptions
+    helperMethods, structs and steeringBehavior are files needed from HW2 and indooEnv and pathfinding.h are needed from HW3.
+    graph - hold the graph datastrucutre needed for pathfinding and for this project
+    pathfinding - holds A* and Dijkstras algorithms
+    heurisitc- holds the different heurisitcs for A* and the abstract class 
+    indoorEnv- helps faciliatate making the map for this assigment and the parametization of the boid and its behaviors.
+
+    decisionTree - holds the decision tree data structure for part 1
+    behaviorTree - holds the behavior tree data structure for part 2
+    decisionTreeLearner.py is the implemntation of decisionTree learning from the textbook page 617.
+    main- the main runnable that does the analysis of the three tree structures and the sfml animation
+
+
+Directions:
+
+This is the HW 4 folder. In the terminal cd into the src folder.
+Once in the source foulder (/FINAL_CSC_484/src$) type out: make 
+
+This will create the o files for all the header files and main files and different parts as well 
+
+
+Run the main menu of HW2 by typing out:
+./main
+
+You will then be promted 
+
+"Choose between part1 - 1, part2 -2, or part3 - 3 ( or run the state parametrization 4)"
+
+
+Enter 1 to see the Decision tree algorithm in action the black character boid will be dancing when its skill <10, will wander when its skill >10 and hunger and tiredness <100 and go to sleep or eat other wise. Look more into the explanation of this part in the write up.
+    
+Close out of the SFMl page, when finished
+
+Then in the terminal do ./main to get back in the menu system then:
+
+Enter 2 to see part 2 the bheavior tree. now you will see a pink boid, this is the monster the monster will also dance around and wander however this time it will go ahead and try to kill the boid depending on its behavior. Look more into this description in the write up as well  
+
+Then in the terminal do ./main to get back in the menu system then:
+
+Enter 3 to see the decisionLearnedTree in which the tree is generated via the decsionTreeLearner.py file after doing entorpy calcualtiions of teh bheavior of the pink boid in "Enter 2 stage"
+
+Enter 4 To generate new parameterization of the state space of the monster-boid when its doing behavior tree you can run it by pressing 4 and waiting approxiamtely 5 minutes to build up to 10,000 lines of data. This will be used to generate the decisionTreeLearned structure
+
+Again you can see this in action by pressing 3 in which the decisionTree here does a similar enough but not the exact same movement as the behavior tree.
+
